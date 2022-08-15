@@ -6,7 +6,7 @@ Chart.register(LineController, LineElement, PointElement, LinearScale, Title, Ca
  import styles from '../styles/Chart.module.css';
  import { server } from '../config';
 
-export default function Financial({memberData}) {
+const Financial = ({memberData})=> {
   
   const labels =['January','February','March','April','May','June','July','August','September','October','November','December']
   
@@ -78,7 +78,9 @@ export default function Financial({memberData}) {
     </div>
   )
 }
-export const getStaticProps = async ()=>{
+
+
+export const getServerSideProps = async ()=>{
   const res = await fetch(`${server}/api/member`);
   const memberData = await res.json()
 
@@ -86,3 +88,5 @@ export const getStaticProps = async ()=>{
     props:{memberData}
   }
 }
+
+export default Financial
