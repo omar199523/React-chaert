@@ -3,7 +3,8 @@ import { useState } from 'react'
 import { Chart, LineController, LineElement, PointElement, LinearScale, Title,CategoryScale } from 'chart.js';
 import {BarChart} from '../../componants'
 Chart.register(LineController, LineElement, PointElement, LinearScale, Title, CategoryScale);
- import styles from '../../styles/Chart.module.css'
+ import styles from '../../styles/Chart.module.css';
+ import { server } from '../../config';
 
 export default function Financial({memberData}) {
   
@@ -78,7 +79,7 @@ export default function Financial({memberData}) {
   )
 }
 export const getStaticProps = async ()=>{
-  const res = await fetch(`http://localhost:3000/api/member`);
+  const res = await fetch(`${server}/api/member`);
   const memberData = await res.json()
 
   return {
