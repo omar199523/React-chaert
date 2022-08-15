@@ -1,6 +1,9 @@
 .container {
   padding: 0 2rem;
   height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .main {

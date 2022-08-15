@@ -3,7 +3,7 @@ import { useState } from 'react'
 import { Chart, LineController, LineElement, PointElement, LinearScale, Title,CategoryScale } from 'chart.js';
 import {BarChart} from '../../componants'
 Chart.register(LineController, LineElement, PointElement, LinearScale, Title, CategoryScale);
-
+ import styles from '../../styles/Chart.module.css'
 
 export default function Financial({memberData}) {
   
@@ -71,7 +71,7 @@ export default function Financial({memberData}) {
     ],
   })
   return (
-    <div>
+    <div className={styles.chart}>
       <BarChart BarChaerData ={BarChaerData}/>
       
     </div>

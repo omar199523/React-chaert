@@ -1,9 +1,9 @@
 
-import styles from '../styles/Home.module.css'
+
 import Link from 'next/link'
 export default function Home() {
   return (
-    <div className={styles.container}>
+    <div >
       <h1>Hello Next</h1>
       <Link href='/chart/Financial'>financial summary</Link>
       
