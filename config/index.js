@@ -1,3 +1,3 @@
 const dev = process.env.NODE_ENV !== 'production';
 
-export const server = dev ? 'http://localhost:3000' : 'https://med.tech.syn.com';
+export const server = dev ? 'http://localhost:3001' : 'https://med.tech.syn.com';
