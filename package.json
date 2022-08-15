@@ -9,6 +9,9 @@
     "lint": "next lint",
     "heroku-postbuild":"npm run build"
   },
+  "engines": {
+    "node": "14.18.1"
+  },
   "dependencies": {
     "chart.js": "^3.9.1",
     "next": "12.2.5",
