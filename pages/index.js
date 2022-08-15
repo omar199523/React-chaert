@@ -5,7 +5,7 @@ export default function Home() {
   return (
     <div >
       <h1>Hello Next</h1>
-      <Link href='/chart/Financial'>financial summary</Link>
+      <Link href='/financial'>financial summary</Link>
       
     </div>
   )

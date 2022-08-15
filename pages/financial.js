@@ -1,10 +1,10 @@
 
 import { useState } from 'react'
 import { Chart, LineController, LineElement, PointElement, LinearScale, Title,CategoryScale } from 'chart.js';
-import {BarChart} from '../../componants'
+import {BarChart} from '../componants'
 Chart.register(LineController, LineElement, PointElement, LinearScale, Title, CategoryScale);
- import styles from '../../styles/Chart.module.css';
- import { server } from '../../config';
+ import styles from '../styles/Chart.module.css';
+ import { server } from '../config';
 
 export default function Financial({memberData}) {
   
